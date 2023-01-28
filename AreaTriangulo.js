@@ -1,0 +1,11 @@
+var readline = require("readline-sync");
+var calculaarea = require("area-triangulo-df");
+var base = 0;
+var altura = 0;
+var area = 0;
+console.log("Calcula a área de um triangulo");
+base = parseFloat(readline.question("Base: "));
+altura = parseFloat(readline.question("Altura"));
+area = calculaarea(base,altura);
+//area = (base * altura) /2;
+console.log("A área do triangulo é: " + area);
